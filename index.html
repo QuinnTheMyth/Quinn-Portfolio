@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesPhone.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="Images/icon.png">
+    <title>Quinn's Portfolio (BETA)</title>
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <div id="topContainer">
+            <button id="home">home</button>
+            <button id="workExperience">work experience</button>
+            <button id="sideProjects">side projects</button>
+            <button id="contact">contact</button>
+        </div>
+
+        <!--Home page container-->
+        <div id="homeContainer">
+            <div id="gradientEffect"></div>
+            <div class="speck"></div>
+        
+            <!--"My name is" text-->
+            <p id="myName">Quinn</p>
+            <p id="blockText">Programmer and aspiring software engineer with<br>skills specialising in Python, as well as<br>experience in developing web applications.</p>
+            </div>
+
+        <!--Work Experience Container-->
+        <div id="workExpContainer">
+                <p id="workExperienceTitle" class="fade-in-on-scroll">Work Experience</p>
+                <div class="whiteBorder" style="left: 2%;"></div>
+                <div class="whiteBorder" style="left: 98%;"></div>
+                <div id="MBDABox" class="fade-in-on-scroll">
+                <p id="MBDATitle">MBDA Software Engineering Experience</p>
+                <p id="yearStarted">June 2023</p>
+                <p id="mbdaInfo">During my work experience, I gained important<br>insight into the role of software in the company.<br>I gained invaluable skills across the entire<br>software development lifecycle, from programming<br>to hardware implementation.</p>
+                </div>
+                <div id="iconContainer">
+                    <!--Python widget-->
+                    <img src="Images/python.png" id="hexagonPython">
+                    <!--Raspberry PI widget-->
+                    <img src="Images/raspberryPI.png" id="hexagonRaspberry">
+                    <!--Teamworking widget-->
+                    <img src="Images/teamworking.png" id="hexagonTeamwork">
+                </div>
+                <p id="pythonInfo">I used my skills in python to create a user<br>interface for a radar missile tracking system.<br>My code included the use of functions to display<br>each aspect of the screen, and other functions<br>to update what shows on the screen depending<br>on what the hardware is detecting.</p>
+                <p id="raspberryPIInfo">I created a detector system using Raspberry Pi<br>hardware. Namely, I used an ultrasonic distance<br>sensor in order to detect the distance of objects<br>coming towards it. This distance was then updated<br>visually to the user interface with the help<br>of Python.</p>
+                <p id="teamworkingInfo">During my work experience I worked closely with<br>my peers to create a working project. We had to<br>discuss how we would code it, debugging accordingly.<br>In particular, we encountered an issue<br>where some Raspberry Pi modules couldn't be detected.<br>We brainstormed potential ideas to fix this and, <br>eventually, figured out how to reinstall a new module<br>that would fulfill the same purpose.</p>
+            </div>
+
+        <!--Side Projects Container-->
+        <div id="sideProjContainer">
+            <p id="sideProjTitle">Side Projects</p>
+            <img src="Images/TCASImg.png" id="tcasImg">
+            <p id="tcasTitle">Traffic Control Avoidance System Simulator</p>
+            <p id="tcasText">For my Extended Project Qualification (EPQ),<br>I created a TCAS simulation model to educate<br>others on the important uses of TCAS, and how<br>they help pilots avoid oncoming traffic. I used<br>Python and the Pygame library for this, documenting<br>my process all the way through. Lastly, I presented<br>my work and creation process, gaining an A* grade.</p>
+            
+            <img src="Images/flightSimImg.png" id="flightSimImg">
+            <p id="flightSimTitle">Flight Simulator Game</p>
+            <p id="flightGmInfo">"Whimsy Wings Aviation" is a fun, lighthearted<br>game where the player gets to fly a plane and<br>compete with others to gain the highest score on<br>the leaderboard. It uses Python, SQL and the Panda3D<br>library, allowing for the use of interesting 3D<br>graphics and animations.</p>
+            
+            <img src="Images/webPortfolio.png" id="portfolioImg">
+            <p id="portfolioTitle">Website Portfolio</p>
+            <p id="portfolioText">This website portfolio displays all of my most<br>recent programming and work experience. I created<br>this using HTML, CSS & JavaScript, allowing me to<br>demonstrate my skills in an interactive manner.</p>
+        </div>
+
+        <!--Contacts Container-->
+        <div id="contactsContainer">
+            <p id="contactsTitle">Contacts</p>
+            <div id="btnContainer">
+            <button id="contactsInfo1" onclick="window.location.href='https://www.linkedin.com/in/quinn-carr-80a172272/';">LinkedIn</button>
+            <button id="contactsInfo2" onclick="changeBtnText()">Gmail</button>
+            </div>
+            <div class="whiteBorder2" style="left: 2%;"></div>
+            <div class="whiteBorder2" style="left: 98%;"></div>
+        </div>
+
+    </body>
+

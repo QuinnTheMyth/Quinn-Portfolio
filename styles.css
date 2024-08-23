@@ -1,0 +1,393 @@
+/* Set up required fonts */
+@font-face {
+    font-family: 'courier';
+    src: url('fonts/cour.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TCB';
+    src: url('fonts/TCB_____.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TCBItalic';
+    src: url('fonts/TCBI____.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #121111;
+    margin: 0;
+    padding: 0;
+    font-family: 'courier', serif;
+    color: #f4f4ee;
+}
+
+#topContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 4;
+}
+
+#home, #workExperience, #sideProjects, #contact {
+    font-family: 'courier', serif;
+    color: #f4f4ee;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    padding: 25px;
+}
+
+#home:hover, #workExperience:hover, #sideProjects:hover, #contact:hover {
+    text-decoration: underline;
+}
+
+/*Start of home page designs*/
+#homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-image: radial-gradient(circle, #0c0e55, #000000);
+    min-height: 80vh;
+    flex-direction: column;
+}
+
+#myName{
+    position: absolute;
+    font-family: 'TCB', serif;
+    font-size: 5.3em;
+    left: 495px;
+    margin-top: 120px;
+    color: #f4f4ee;
+    opacity: 0; 
+    animation: easeInUp 1.5s ease-out forwards;
+}
+
+#blockText{
+    position: absolute;
+    font-family: 'courier';
+    font-size: 1.3rem;
+    left: 375px;
+    top: 360px;
+    color: #f4f4ee;
+    opacity: 0; 
+    animation: easeInUp2 1.5s ease-out forwards;
+}
+
+@keyframes easeInUp {
+    0% {
+        top: 120px; 
+        opacity: 0; 
+    }
+    100% {
+        top: 80px; 
+        opacity: 1; 
+    }
+}
+
+@keyframes easeInUp2 {
+    0% {
+        top: 360px; 
+        opacity: 0; 
+    }
+    100% {
+        top: 310px; 
+        opacity: 1; 
+    }
+}
+
+/* Speck styling */
+.speck {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #f4f4ee; 
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 8px 4px rgba(201, 230, 239, 0.5);
+    animation: fadeInOut 5s linear infinite;
+}
+
+/* Fade in and out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+/*End of home page designs*/
+
+/*Start of work experience page designs*/
+#workExpContainer{
+    background-image: radial-gradient(circle, #0c0e55, #000000);
+    top: 600px;
+    height: 600px;
+    user-select: none;
+}
+
+.whiteBorder{
+    position: absolute;
+    width: 2px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 1px; 
+    animation: flicker 1.5s infinite;
+}
+
+.whiteBorder2{
+    position: absolute;
+    width: 2px;
+    top: 2500px; 
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 1px; 
+    animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.9;
+    }
+    40%{
+        opacity: 0.7;
+    }
+    80%{
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#workExperienceTitle{
+    position: absolute;
+    font-family: 'TCB';
+    font-size: 60px;
+    left: 440px;
+    top: 610px;
+    color: #f4f4ee;
+    z-index: 3;
+}
+
+.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.fade-in-on-scroll.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+#MBDABox{
+    position: absolute;
+    font-family: courier;
+    font-size: 20px;
+    color:#f4f4ee;
+    left: 360px;
+    top: 760px;
+    border-style: solid;
+    border-color:#000000;
+    background-image: radial-gradient(circle, #0c0e55, #000000);
+    border-radius: 5%;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+#hexagonPython, #hexagonRaspberry, #hexagonTeamwork {
+    transition: transform 0.3s ease;
+}
+
+#hexagonPython:hover, #hexagonRaspberry:hover, #hexagonTeamwork:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#iconContainer{
+    position: absolute;
+    scale: 40%;
+    left: 180px;
+    top: 970px;
+}
+
+#pythonInfo, #raspberryPIInfo, #teamworkingInfo{
+    display: none;
+    position: absolute;
+    font-family: 'courier';
+    font-size: 22px;
+    left: 375px;
+    color: #f4f4ee;
+}
+/*End of work experience page designs*/
+
+/*Start of side projects page designs*/
+#sideProjContainer{
+    background-image: radial-gradient(circle, #813f2b, #0c0e55);
+    top: 600px;
+    height: 1280px;
+    user-select: none;
+}
+
+#sideProjTitle{
+    position: absolute;
+    font-family: 'TCB', serif;
+    font-size: 80px;
+    left: 4%;
+    top: 1140px;
+    color: #f4f4ee;
+}
+
+#tcasImg{
+    position: absolute;
+    top: 1200px;
+    scale: 55%;
+    left: -110px;
+    border-radius: 5%;
+}
+
+#tcasTitle{
+    position: absolute;
+    font-family: 'TCB', serif;
+    font-size: 38px;
+    left: 480px;
+    top: 1300px;
+    color: #f4f4ee;
+}
+
+#tcasText{
+    position: absolute;
+    font-family: 'courier';
+    font-size: 20px;
+    left: 480px;
+    top: 1400px;
+    color: #f4f4ee;
+}
+
+#flightSimImg{
+    position: absolute;
+    top: 1630px;
+    scale: 62%;
+    left: -70px;
+    border-radius: 5%;
+}
+
+#flightSimTitle{
+    position: absolute;
+    font-family: 'TCB', serif;
+    font-size: 38px;
+    left: 480px;
+    top: 1700px;
+    color: #f4f4ee;
+}
+
+#flightGmInfo{
+    position: absolute;
+    font-family: 'courier';
+    font-size: 20px;
+    left: 480px;
+    top: 1800px;
+    color: #f4f4ee;
+}
+
+#portfolioImg{
+    position: absolute;
+    top: 1930px;
+    scale: 43%;
+    left: -18%;
+    border-radius: 5%;
+}
+
+#portfolioTitle{
+    position: absolute;
+    font-family: 'TCB', serif;
+    font-size: 38px;
+    left: 480px;
+    top: 2080px;
+    color: #f4f4ee;
+}
+
+#portfolioText{
+    position: absolute;
+    font-family: 'courier';
+    font-size: 20px;
+    left: 480px;
+    top: 2180px;
+    color: #f4f4ee;
+}
+/*End of side projects page designs*/
+
+/*Start of contacts page designs*/
+#contactsContainer{
+    background-color: #121111;
+    top: 600px;
+    height: 320px;
+    user-select: none;
+}
+
+#contactsTitle{
+    position: absolute;
+    font-family: 'TCB', serif;
+    font-size: 50px;
+    left: 42%;
+    top: 2460px;
+    color: #f4f4ee;
+}
+
+#contactsInfo1, #contactsInfo2{
+    font-family: 'courier';
+    font-size: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid #232121;
+    box-shadow: #232121 4px 4px 0 0;
+    font-weight: 600;
+}
+
+#contactsInfo1{
+    position: absolute;
+    left: 450px;
+    top: 2600px;
+    background-color: #f4f4ee;
+    color: #232121;
+}
+
+#contactsInfo2{
+    position: absolute;
+    left: 660px;
+    top: 2600px;
+    background-color: #f4f4ee;
+    color: #232121;
+}
+/*End of contacts page designs*/

@@ -1,0 +1,264 @@
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+    body {
+        background-color: #1b1b1b;
+    }
+
+    #myName {
+    font-size: 2.5em;
+    align-items: center;
+    }
+
+    #topContainer{
+        position: absolute;
+        display: flex;
+    }
+
+    #home, #workExperience, #sideProjects, #contact {
+    font-size: 0.7em;
+    padding: 0.4em;
+    }
+
+    #home:hover, #workExperience:hover, #sideProjects:hover, #contact:hover {
+        text-decoration: underline;
+    }
+
+    #homeContainer {
+        display: flex;
+        text-align: center;
+        padding: 10px 20px;
+        background-image: radial-gradient(circle, #0c0e55, #000000);
+        max-width: 100%;
+        min-height: 70vh;
+        flex-direction: column;
+    }
+
+    #myName{
+        position: absolute;
+        font-family: 'TCB', serif;
+        font-size: 4em;
+        left: 1.7em;
+        margin-top: 1em;
+        color: #f4f4ee;
+        opacity: 0; 
+        animation: easeInUp 1.5s ease-out forwards;
+    }
+
+    #blockText{
+        position: absolute;
+        font-family: 'courier';
+        font-size: 0.9em;
+        left: 0.9em;
+        margin-top: -4em;
+        color: #f4f4ee;
+        opacity: 0; 
+        animation: easeInUp2 1.5s ease-out forwards;
+    }
+
+    #workExpContainer{
+        background-image: radial-gradient(circle, #0c0e55, #000000);
+        top: 600px;
+        height: 600px;
+        user-select: none;
+    }
+
+    .whiteBorder{
+        position: absolute;
+        width: 2px;
+        height: 45sem;
+        background-color: white;
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+        border-radius: 1px; 
+        animation: flicker 1.5s infinite;
+    }
+
+    #workExperienceTitle{
+        position: absolute;
+        font-family: 'TCB';
+        font-size: 3em;
+        left: 0.3em;
+        margin-top: 1em;
+        color: #f4f4ee;
+        z-index: 3;
+    }
+
+    #MBDABox{
+        position: absolute;
+        font-family: courier;
+        font-size: 0.9em;
+        color:#f4f4ee;
+        left: 0.3em;
+        margin-top: -1em;
+        border-style: solid;
+        border-color:#000000;
+        background-image: radial-gradient(circle, #0c0e55, #000000);
+        border-radius: 5%;
+        border-width: 0.1em;
+        cursor: pointer;
+    }
+
+    #iconContainer{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        scale: 30%;
+        left: -15em;
+        margin-top: 1em;
+    }
+    
+    #pythonInfo, #raspberryPIInfo, #teamworkingInfo{
+        display: none;
+        position: absolute;
+        font-family: 'courier';
+        font-size: 0.9em;
+        color: #f4f4ee;
+    }
+    
+    #sideProjContainer{
+        display: flex;
+        padding: 10px 20px;
+        max-width: 100%;
+        min-height: 80vh;
+        height: 87.5em;
+        flex-direction: column;
+    }
+    
+    #sideProjTitle{
+        position: absolute;
+        font-family: 'TCB', serif;
+        font-size: 3em;
+        left: 4%;
+        margin-top: 2.5em;
+        color: #f4f4ee;
+    }
+    
+    #tcasImg{
+        position: absolute;
+        margin-top: 1em;
+        scale: 40%;
+        left: -9em;
+        border-radius: 5%;
+    }
+
+    #tcasTitle{
+        position: absolute;
+        font-family: 'TCB', serif;
+        font-size: 1.5em;
+        left: 1.5em;
+        margin-top: 1em;
+        color: #f4f4ee;
+    }
+    
+    #tcasText{
+        position: absolute;
+        font-family: 'courier';
+        font-size: 0.9em;
+        left: 1em;
+        margin-top: 18em;
+        color: #f4f4ee;
+    }
+
+    #flightSimImg{
+        position: absolute;
+        margin-top: 6em;
+        scale: 45%;
+        left: -6em;
+        border-radius: 5%;
+    }
+    
+    #flightSimTitle{
+        position: absolute;
+        font-family: 'TCB', serif;
+        font-size: 1.6em;
+        left: 1em;
+        margin-top: 5.5em;
+        color: #f4f4ee;
+    }
+    
+    #flightGmInfo{
+        position: absolute;
+        font-family: 'courier';
+        font-size: 0.9em;
+        left: 1em;
+        margin-top: 24em;
+        color: #f4f4ee;
+    }
+    
+    #portfolioImg{
+        position: absolute;
+        margin-top: 12em;
+        scale: 30%;
+        left: -17em;
+        border-radius: 5%;
+    }
+    
+    #portfolioTitle{
+        position: absolute;
+        font-family: 'TCB', serif;
+        font-size: 1.6em;
+        left: 1em;
+        margin-top: 9em;
+        color: #f4f4ee;
+    }
+    
+    #portfolioText{
+        position: absolute;
+        font-family: 'courier';
+        font-size: 0.9em;
+        left: 1em;
+        margin-top: 26em;
+        color: #f4f4ee;
+    }
+
+    #contactsContainer{
+        background-color: #121111;
+        max-height: 30vh;
+        user-select: none;
+    }
+
+    #contactsTitle{
+        position: absolute;
+        font-family: 'TCB', serif;
+        font-size: 3em;
+        left: 2.2em;
+        margin-top: 4.5em;
+        color: #f4f4ee;
+    }
+    
+    #contactsInfo1, #contactsInfo2{
+        font-family: 'courier';
+        font-size: 25px;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 2px solid #232121;
+        box-shadow: #232121 4px 4px 0 0;
+        font-weight: 600;
+    }
+    
+    #contactsInfo1{
+        position: absolute;
+        left: 2em;
+        margin-top: 6em;
+        background-color: #f4f4ee;
+        color: #232121;
+    }
+    
+    #contactsInfo2{
+        position: absolute;
+        left: 9em;
+        margin-top: 6em;
+        background-color: #f4f4ee;
+        color: #232121;
+    }
+
+    .whiteBorder2{
+        position: absolute;
+        width: 2px;
+        margin-top: 11.5em; 
+        height: 10em;
+        background-color: white;
+        box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+        border-radius: 1px; 
+        animation: flicker 1.5s infinite;
+    }
+
+}
