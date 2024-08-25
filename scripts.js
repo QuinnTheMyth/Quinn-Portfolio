@@ -18,14 +18,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Code to make gradient follow mouse
     document.addEventListener('mousemove', (event) => {
         const { clientX: x, clientY: y } = event;
+    
+        // Get the dimensions and position of the sideProjContainer
+        const sideProjRect = sideProjContainer.getBoundingClientRect();
+        const sideProjX = x - sideProjRect.left; 
+        const sideProjY = y - sideProjRect.top; 
+    
+        const sideProjXPercent = sideProjX / sideProjRect.width;
+        const sideProjYPercent = sideProjY / sideProjRect.height;
+    
+        // Calculate percentages for other containers relative to the entire window
         const xPercent = x / window.innerWidth;
         const yPercent = y / window.innerHeight;
-
+    
         homeContainer.style.backgroundImage = `radial-gradient(circle at ${xPercent * 90}% ${yPercent * 90}%, #0c0e55, #000000)`;
         workExpContainer.style.backgroundImage = `radial-gradient(circle at ${xPercent * 90}% ${yPercent * 90}%, #0c0e55, #000000)`;
-        sideProjContainer.style.backgroundImage = `radial-gradient(circle at ${xPercent * 100}% ${yPercent * 100}%, #813f2b, #0c0e55)`;
-        contactsContainer.style.backgroundImage = `radial-gradient(circle at ${xPercent * 110}% ${yPercent * 110}%,  #0c0e55, #232121)`;
+        sideProjContainer.style.backgroundImage = `radial-gradient(circle at ${sideProjXPercent * 100}% ${sideProjYPercent * 100}%, #0c0e55, #232121)`;
+        contactsContainer.style.backgroundImage = `radial-gradient(circle at ${xPercent * 110}% ${yPercent * 110}%,  #0c0e55, #080808)`;
     });
+    
 
     // Code to make small specks show on the home page, and fade out
     function createSpeck() {
@@ -116,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Change gmail btn when clicked
 function changeBtnText() {
-    document.getElementById("contactsInfo2").innerText = "Q.myth005@gmail.com : copied";
+    document.getElementById("contactsInfo2").innerText = "Q.myth005@gmail.com";
     navigator.clipboard.writeText("q.myth005@gmail.com")
 }
 
