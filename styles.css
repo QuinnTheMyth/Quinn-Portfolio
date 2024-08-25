@@ -85,7 +85,7 @@ body{
     position: absolute;
     font-family: 'courier';
     font-size: 1.3rem;
-    left: 375px;
+    left: 350px;
     top: 360px;
     color: #f4f4ee;
     opacity: 0; 
@@ -164,8 +164,8 @@ body{
 .whiteBorder2{
     position: absolute;
     width: 2px;
-    top: 2500px; 
-    height: 300px;
+    top: 2477px; 
+    height: 250px;
     background-color: white;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
     border-radius: 1px; 
@@ -254,7 +254,7 @@ body{
 
 /*Start of side projects page designs*/
 #sideProjContainer{
-    background-image: radial-gradient(circle, #813f2b, #0c0e55);
+    background-image: radial-gradient(circle, #0c0e55, #232121);
     top: 600px;
     height: 1280px;
     user-select: none;
@@ -352,7 +352,7 @@ body{
 #contactsContainer{
     background-color: #121111;
     top: 600px;
-    height: 320px;
+    height: 250px;
     user-select: none;
 }
 
@@ -378,7 +378,7 @@ body{
 #contactsInfo1{
     position: absolute;
     left: 450px;
-    top: 2600px;
+    top: 2650px;
     background-color: #f4f4ee;
     color: #232121;
 }
@@ -386,8 +386,17 @@ body{
 #contactsInfo2{
     position: absolute;
     left: 660px;
-    top: 2600px;
+    top: 2650px;
     background-color: #f4f4ee;
     color: #232121;
+}
+
+#contactText{
+    position: absolute;
+    font-family: 'courier';
+    font-size: 20px;
+    left: 415px;
+    top: 2570px;
+    color: #f4f4ee;
 }
 /*End of contacts page designs*/
