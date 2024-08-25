@@ -1,4 +1,4 @@
-@media only screen and (min-width: 300px) and (max-width: 1024px) {
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
     body {
         background-color: #1b1b1b;
     }
@@ -210,8 +210,8 @@
     }
 
     #contactsContainer{
-        background-color: #121111;
-        max-height: 30vh;
+        background-color: #080808;
+        max-height: 18vh;
         user-select: none;
     }
 
@@ -226,7 +226,7 @@
     
     #contactsInfo1, #contactsInfo2{
         font-family: 'courier';
-        font-size: 25px;
+        font-size: 20px;
         border-radius: 30px;
         cursor: pointer;
         border: 2px solid #232121;
@@ -236,7 +236,7 @@
     
     #contactsInfo1{
         position: absolute;
-        left: 2em;
+        left: 5em;
         margin-top: 6em;
         background-color: #f4f4ee;
         color: #232121;
@@ -244,8 +244,8 @@
     
     #contactsInfo2{
         position: absolute;
-        left: 9em;
-        margin-top: 6em;
+        left: 5em;
+        margin-top: 8em;
         background-color: #f4f4ee;
         color: #232121;
     }
@@ -253,12 +253,21 @@
     .whiteBorder2{
         position: absolute;
         width: 2px;
-        margin-top: 11.5em; 
-        height: 10em;
+        margin-top: 12.8em; 
+        height: 10.2em;
         background-color: white;
         box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
         border-radius: 1px; 
         animation: flicker 1.5s infinite;
+    }
+
+    #contactText{
+        position: absolute;
+        font-family: 'courier';
+        font-size: 0.9em;
+        left: 3.2em;
+        top: 190em;
+        color: #f4f4ee;
     }
 
 }
