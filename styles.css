@@ -74,7 +74,7 @@ body{
     position: absolute;
     font-family: 'TCB', serif;
     font-size: 5.3em;
-    left: 495px;
+    text-align: center;
     margin-top: 120px;
     color: #f4f4ee;
     opacity: 0; 
@@ -85,7 +85,7 @@ body{
     position: absolute;
     font-family: 'courier';
     font-size: 1.3rem;
-    left: 350px;
+    text-align: center;
     top: 360px;
     color: #f4f4ee;
     opacity: 0; 
@@ -145,9 +145,13 @@ body{
 
 /*Start of work experience page designs*/
 #workExpContainer{
-    background-image: radial-gradient(circle, #0c0e55, #000000);
-    top: 600px;
+    position: relative;
+    background-image: radial-gradient(circle, #0c0e55, #000000);   
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     user-select: none;
 }
 
@@ -164,7 +168,7 @@ body{
 .whiteBorder2{
     position: absolute;
     width: 2px;
-    top: 2477px; 
+    top: 0; 
     height: 250px;
     background-color: white;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
@@ -194,8 +198,8 @@ body{
     position: absolute;
     font-family: 'TCB';
     font-size: 60px;
-    left: 440px;
-    top: 610px;
+    text-align: center;
+    top: 0;
     color: #f4f4ee;
     z-index: 3;
 }
@@ -216,8 +220,8 @@ body{
     font-family: courier;
     font-size: 20px;
     color:#f4f4ee;
-    left: 360px;
-    top: 760px;
+    text-align: center;
+    top: 7em;
     border-style: solid;
     border-color:#000000;
     background-image: radial-gradient(circle, #0c0e55, #000000);
@@ -238,8 +242,8 @@ body{
 #iconContainer{
     position: absolute;
     scale: 40%;
-    left: 180px;
-    top: 970px;
+    text-align: center;
+    top: 22.5em;
 }
 
 #pythonInfo, #raspberryPIInfo, #teamworkingInfo{
@@ -254,8 +258,8 @@ body{
 
 /*Start of side projects page designs*/
 #sideProjContainer{
+    position: relative;
     background-image: radial-gradient(circle, #0c0e55, #232121);
-    top: 600px;
     height: 1280px;
     user-select: none;
 }
@@ -265,13 +269,13 @@ body{
     font-family: 'TCB', serif;
     font-size: 80px;
     left: 4%;
-    top: 1140px;
+    top: -1em;
     color: #f4f4ee;
 }
 
 #tcasImg{
     position: absolute;
-    top: 1200px;
+    top: -2em;
     scale: 55%;
     left: -110px;
     border-radius: 5%;
@@ -282,7 +286,7 @@ body{
     font-family: 'TCB', serif;
     font-size: 38px;
     left: 480px;
-    top: 1300px;
+    top: 1.5em;
     color: #f4f4ee;
 }
 
@@ -291,13 +295,13 @@ body{
     font-family: 'courier';
     font-size: 20px;
     left: 480px;
-    top: 1400px;
+    top: 8em;
     color: #f4f4ee;
 }
 
 #flightSimImg{
     position: absolute;
-    top: 1630px;
+    top: 24em;
     scale: 62%;
     left: -70px;
     border-radius: 5%;
@@ -308,7 +312,7 @@ body{
     font-family: 'TCB', serif;
     font-size: 38px;
     left: 480px;
-    top: 1700px;
+    top: 12em;
     color: #f4f4ee;
 }
 
@@ -317,15 +321,15 @@ body{
     font-family: 'courier';
     font-size: 20px;
     left: 480px;
-    top: 1800px;
+    top: 28em;
     color: #f4f4ee;
 }
 
 #portfolioImg{
     position: absolute;
-    top: 1930px;
+    top: 45em;
     scale: 43%;
-    left: -18%;
+    left: -230px;
     border-radius: 5%;
 }
 
@@ -334,7 +338,7 @@ body{
     font-family: 'TCB', serif;
     font-size: 38px;
     left: 480px;
-    top: 2080px;
+    top: 23em;
     color: #f4f4ee;
 }
 
@@ -343,15 +347,18 @@ body{
     font-family: 'courier';
     font-size: 20px;
     left: 480px;
-    top: 2180px;
+    top: 49em;
     color: #f4f4ee;
 }
 /*End of side projects page designs*/
 
 /*Start of contacts page designs*/
 #contactsContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #121111;
-    top: 600px;
     height: 250px;
     user-select: none;
 }
@@ -360,12 +367,13 @@ body{
     position: absolute;
     font-family: 'TCB', serif;
     font-size: 50px;
-    left: 42%;
-    top: 2460px;
+    left: 10em;
+    top: -1em;
     color: #f4f4ee;
 }
 
 #contactsInfo1, #contactsInfo2{
+    position: relative;
     font-family: 'courier';
     font-size: 25px;
     border-radius: 30px;
@@ -377,16 +385,16 @@ body{
 
 #contactsInfo1{
     position: absolute;
-    left: 450px;
-    top: 2650px;
+    left: 18em;
+    top: 5em;
     background-color: #f4f4ee;
     color: #232121;
 }
 
 #contactsInfo2{
     position: absolute;
-    left: 660px;
-    top: 2650px;
+    left: 25em;
+    top: 5em;
     background-color: #f4f4ee;
     color: #232121;
 }
@@ -395,8 +403,8 @@ body{
     position: absolute;
     font-family: 'courier';
     font-size: 20px;
-    left: 415px;
-    top: 2570px;
+    left: 20em;
+    top: 3em;
     color: #f4f4ee;
 }
 /*End of contacts page designs*/
