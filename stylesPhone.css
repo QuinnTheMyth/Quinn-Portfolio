@@ -9,7 +9,7 @@
     }
 
     #topContainer{
-        position: absolute;
+        position: fixed;
         display: flex;
     }
 
@@ -23,6 +23,7 @@
     }
 
     #homeContainer {
+        position: relative;
         display: flex;
         text-align: center;
         padding: 10px 20px;
@@ -36,7 +37,7 @@
         position: absolute;
         font-family: 'TCB', serif;
         font-size: 4em;
-        left: 1.7em;
+        text-align: center;
         margin-top: 1em;
         color: #f4f4ee;
         opacity: 0; 
@@ -47,7 +48,7 @@
         position: absolute;
         font-family: 'courier';
         font-size: 0.9em;
-        left: 0.9em;
+        text-align: center;
         margin-top: -4em;
         color: #f4f4ee;
         opacity: 0; 
@@ -55,8 +56,8 @@
     }
 
     #workExpContainer{
+        position: relative;
         background-image: radial-gradient(circle, #0c0e55, #000000);
-        top: 600px;
         height: 600px;
         user-select: none;
     }
@@ -75,8 +76,8 @@
         position: absolute;
         font-family: 'TCB';
         font-size: 3em;
-        left: 0.3em;
-        margin-top: 1em;
+        text-align: center;
+        top: -0.8em;
         color: #f4f4ee;
         z-index: 3;
     }
@@ -86,7 +87,7 @@
         font-family: courier;
         font-size: 0.9em;
         color:#f4f4ee;
-        left: 0.3em;
+        text-align: center;
         margin-top: -1em;
         border-style: solid;
         border-color:#000000;
@@ -101,8 +102,8 @@
         flex-direction: row;
         position: absolute;
         scale: 30%;
-        left: -15em;
-        margin-top: 1em;
+        text-align: center;
+        top: 14em;
     }
     
     #pythonInfo, #raspberryPIInfo, #teamworkingInfo{
@@ -114,6 +115,7 @@
     }
     
     #sideProjContainer{
+        position: relative;
         display: flex;
         padding: 10px 20px;
         max-width: 100%;
@@ -126,14 +128,14 @@
         position: absolute;
         font-family: 'TCB', serif;
         font-size: 3em;
-        left: 4%;
-        margin-top: 2.5em;
+        left: 0.2em;
+        top: -0.8em;
         color: #f4f4ee;
     }
     
     #tcasImg{
         position: absolute;
-        margin-top: 1em;
+        top: -4em;
         scale: 40%;
         left: -9em;
         border-radius: 5%;
@@ -144,7 +146,7 @@
         font-family: 'TCB', serif;
         font-size: 1.5em;
         left: 1.5em;
-        margin-top: 1em;
+        top: 2em;
         color: #f4f4ee;
     }
     
@@ -153,13 +155,13 @@
         font-family: 'courier';
         font-size: 0.9em;
         left: 1em;
-        margin-top: 18em;
+        top: 26em;
         color: #f4f4ee;
     }
 
     #flightSimImg{
         position: absolute;
-        margin-top: 6em;
+        top: 27em;
         scale: 45%;
         left: -6em;
         border-radius: 5%;
@@ -170,7 +172,7 @@
         font-family: 'TCB', serif;
         font-size: 1.6em;
         left: 1em;
-        margin-top: 5.5em;
+        top: 20em;
         color: #f4f4ee;
     }
     
@@ -179,13 +181,13 @@
         font-family: 'courier';
         font-size: 0.9em;
         left: 1em;
-        margin-top: 24em;
+        top: 58em;
         color: #f4f4ee;
     }
     
     #portfolioImg{
         position: absolute;
-        margin-top: 12em;
+        top: 51em;
         scale: 30%;
         left: -17em;
         border-radius: 5%;
@@ -196,7 +198,7 @@
         font-family: 'TCB', serif;
         font-size: 1.6em;
         left: 1em;
-        margin-top: 9em;
+        top: 38em;
         color: #f4f4ee;
     }
     
@@ -205,11 +207,12 @@
         font-family: 'courier';
         font-size: 0.9em;
         left: 1em;
-        margin-top: 26em;
+        top: 88em;
         color: #f4f4ee;
     }
 
     #contactsContainer{
+        position: relative;
         background-color: #080808;
         max-height: 18vh;
         user-select: none;
@@ -219,8 +222,8 @@
         position: absolute;
         font-family: 'TCB', serif;
         font-size: 3em;
-        left: 2.2em;
-        margin-top: 4.5em;
+        left: 3.5em;
+        top: -1em;
         color: #f4f4ee;
     }
     
@@ -236,16 +239,16 @@
     
     #contactsInfo1{
         position: absolute;
-        left: 5em;
-        margin-top: 6em;
+        left: 6em;
+        top: 4em;
         background-color: #f4f4ee;
         color: #232121;
     }
     
     #contactsInfo2{
         position: absolute;
-        left: 5em;
-        margin-top: 8em;
+        left: 13em;
+        top: 4em;
         background-color: #f4f4ee;
         color: #232121;
     }
@@ -253,7 +256,7 @@
     .whiteBorder2{
         position: absolute;
         width: 2px;
-        margin-top: 12.8em; 
+        top: 0;
         height: 10.2em;
         background-color: white;
         box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
@@ -265,8 +268,8 @@
         position: absolute;
         font-family: 'courier';
         font-size: 0.9em;
-        left: 3.2em;
-        top: 190em;
+        left: 8em;
+        top: 2.5em;
         color: #f4f4ee;
     }
 
