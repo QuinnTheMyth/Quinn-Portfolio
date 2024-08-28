@@ -214,7 +214,7 @@
     #contactsContainer{
         position: relative;
         background-color: #080808;
-        max-height: 18vh;
+        max-height: 25vh;
         user-select: none;
     }
 
